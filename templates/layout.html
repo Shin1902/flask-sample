@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Bootstrap 101 Template</title>
+    {% endif %}
+    <!-- Bootstrap -->
+    <link href="../static/stylesheets/reset.css" rel="stylesheet">
+    <link href="../static/stylesheets/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ページに応じて変動するコンテンツ -->
+    {% block content %}{% endblock %}
+    <script src="/static/scripts/main.js"></script>
+</body>
+
+</html>
